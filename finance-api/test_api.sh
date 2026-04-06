@@ -143,6 +143,10 @@ check "Admin delete record" "200" "$HTTP_CODE"
 req "GET" "$BASE_URL/api/dashboard/summary"
 check "No token rejected" "401" "$HTTP_CODE"
 
+# 13) Invalid token should fail
+req "GET" "$BASE_URL/api/dashboard/summary" "" "this.is.not.a.valid.token"
+check "Invalid token rejected" "401" "$HTTP_CODE"
+
 echo ""
 echo "Done: $PASS/$TOTAL checks passed"
 echo "Swagger: $BASE_URL/swagger-ui/index.html"
