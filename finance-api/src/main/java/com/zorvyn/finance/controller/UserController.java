@@ -39,6 +39,11 @@ public class UserController {
         return userService.list().stream().map(this::toResponse).collect(Collectors.toList());
     }
 
+    @GetMapping("/all")
+    public List<Map<String, Object>> getAllUsers() {
+        return list();
+    }
+
     @PatchMapping("/{id}")
     public Map<String, Object> update(@PathVariable Long id, @Valid @RequestBody UpdateUserRequest request) {
         return toResponse(userService.update(id, request));
