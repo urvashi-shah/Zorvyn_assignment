@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Simple API smoke test for Zorvyn assignment
+# Simple API smoke test for FinGuard API
 # Usage:
 #   1) Start server: mvn spring-boot:run
 #   2) Run: bash test_api.sh
 
 BASE_URL="${BASE_URL:-http://localhost:8080}"
-ADMIN_EMAIL="${ADMIN_EMAIL:-admin@zorvyn.com}"
+ADMIN_EMAIL="${ADMIN_EMAIL:-admin@finguard.io}"
 ADMIN_PASSWORD="${ADMIN_PASSWORD:-admin123}"
 
 if ! command -v curl >/dev/null 2>&1; then

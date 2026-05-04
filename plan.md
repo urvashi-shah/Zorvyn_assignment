@@ -1,4 +1,4 @@
-## Zorvyn Assignment Execution Plan
+## FinGuard API Execution Plan
 
 ### 1) Understand Requirements
 - Read the assignment PDF and convert each requirement into backend deliverables.

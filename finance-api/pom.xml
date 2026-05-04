@@ -10,11 +10,11 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.zorvyn</groupId>
-    <artifactId>finance-api</artifactId>
+    <groupId>io.finguard</groupId>
+    <artifactId>finguard-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>finance-api</name>
-    <description>Zorvyn assignment finance backend</description>
+    <name>finguard-api</name>
+    <description>FinGuard personal finance backend API</description>
 
     <properties>
         <java.version>17</java.version>

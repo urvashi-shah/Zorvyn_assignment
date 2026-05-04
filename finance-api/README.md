@@ -1,6 +1,6 @@
-# Zorvyn Finance API (Intern-Level Assignment)
+# FinGuard API
 
-This project is a Spring Boot backend for a finance dashboard assignment.  
+FinGuard API is a personal Spring Boot backend project for finance tracking and dashboard analytics.  
 It covers user roles, financial records CRUD/filtering, dashboard summary APIs, access control, validation, and persistence.
 
 ## Project Highlights
@@ -37,7 +37,7 @@ It covers user roles, financial records CRUD/filtering, dashboard summary APIs, 
 3. Login via `POST /api/auth/login`:
    ```json
    {
-     "email": "admin@zorvyn.com",
+     "email": "admin@finguard.io",
      "password": "admin123"
    }
    ```
@@ -47,7 +47,7 @@ It covers user roles, financial records CRUD/filtering, dashboard summary APIs, 
    ```
 
 ## Seeded User
-- Email: `admin@zorvyn.com`
+- Email: `admin@finguard.io`
 - Password: `admin123`
 
 ## Run API Integration Script
@@ -59,7 +59,7 @@ bash test_api.sh
 
 Optional environment overrides:
 - `BASE_URL` (default `http://localhost:8080`)
-- `ADMIN_EMAIL` (default `admin@zorvyn.com`)
+- `ADMIN_EMAIL` (default `admin@finguard.io`)
 - `ADMIN_PASSWORD` (default `admin123`)
 
 ## Why This Design
@@ -79,6 +79,6 @@ Use Maven Wrapper for consistent build tooling.
 - Build command:
   - `./mvnw clean package -DskipTests`
 - Start command:
-  - `java -jar target/finance-api-0.0.1-SNAPSHOT.jar --server.port=$PORT`
+  - `java -jar target/finguard-api-0.0.1-SNAPSHOT.jar --server.port=$PORT`
 
 If deploying from the repository root, set Render Root Directory to `finance-api`.
